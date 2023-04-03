@@ -360,11 +360,32 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        
         <button class="backdrop-close-btn" data-modal-close>
           <svg class="close-btn">
             <use class="close-btn-x" width="8px" height="8px" href="./images/xo.svg#icon-x"></use></svg>
-        </button>
+          </button>
+          <h2 class="modal-main">Leave your contacts and we will call you back</h2>
+        <form class="modal-form">
+  
+            <label class="modal-label">Name
+              <input class="modal-field" type="text">
+            </label>
+            <label class="modal-label">Phone
+              <input class="modal-field" type="tel">
+            </label>
+            <label class="modal-label">Email
+              <input class="modal-field" type="email">
+            </label class="modal-label">
+            <label class="modal-label">Comment
+              <textarea class="modal-textarea" name="" id="" rows="6"></textarea>
+            </label>
+    
+          <label class="modal-label">I accept the terms and conditions of the
+            <a class="link" href="">Privacy Policy</a>
+          <input class="modal-chackbox" type="checkbox" name="" id="">
+          </label>
+          <button class="face-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
