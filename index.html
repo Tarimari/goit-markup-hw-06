@@ -368,7 +368,7 @@
         <form class="modal-form">
   
             <label class="modal-label">Name
-              <input class="modal-field" type="text">
+              <input class="modal-field" type="text" autofocus >
             </label>
             <label class="modal-label">Phone
               <input class="modal-field" type="tel">
@@ -377,14 +377,15 @@
               <input class="modal-field" type="email">
             </label class="modal-label">
             <label class="modal-label">Comment
-              <textarea class="modal-textarea" name="" id="" rows="6"></textarea>
+              <textarea class="modal-textarea" name="" id="" rows="6" placeholder="Text input" ></textarea>
             </label>
-    
-          <label class="modal-label">I accept the terms and conditions of the
-            <a class="link" href="">Privacy Policy</a>
-          <input class="modal-chackbox" type="checkbox" name="" id="">
-          </label>
-          <button class="face-btn" type="submit">Send</button>
+          <div class="modal-police">
+            <input class="modal-chackbox" type="checkbox" name="" id="police">
+            <label for="police" class="modal-label">I accept the terms and conditions of the
+              <a class="link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="face-btn form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>

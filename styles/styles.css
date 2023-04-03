@@ -84,14 +84,13 @@ img {
 
 .modal {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 408px;
+    width: 408px;
     min-height: 576px;
     padding: 24px;
 
@@ -112,14 +111,14 @@ img {
     border: 1px solid var(--dark);
     border-radius: 50%;
     background-color: var(--white_background);
-    
+
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 
 }
 
-.close-btn{
+.close-btn {
 
     width: 8px;
     height: 8px;
@@ -132,47 +131,94 @@ img {
     background-color: var(--pressed_state);
 }
 
-.backdrop-close-btn:is(:hover, :focus) .close-btn{
+.backdrop-close-btn:is(:hover, :focus) .close-btn {
     fill: var(--white_background);
     transform: rotate(180deg);
 }
 
 .modal-main {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.02em;
+    margin-top: 48px;
 
-color: var(--dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark);
 }
+
 .modal-form {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 16px;
 
 
 }
+
 .modal-label {
     display: block;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: var(--subtle_text);
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--subtle_text);
 }
+
 .modal-field {
     display: block;
-    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    height: 40px;
+
+    opacity: 0.2;
     border: 1px solid #2E2F42;
     border-radius: 4px;
 
 }
+
 .modal-textarea {
     display: block;
-}
-.modal-chackbox {
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    resize: none;
+
+    opacity: 0.2;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
 }
 
+.modal-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
 
+.modal-police {
+    display: flex;
+    margin-top: 16px;
+}
+
+.modal-police>label {
+    margin-left: 8px;
+}
+
+.modal-chackbox {}
+
+.form-btn {
+    margin-top: 24px;
+    /* margin-left: 120px;
+    margin-right: 120px; */
+
+}
 
 
 
@@ -245,7 +291,7 @@ color: var(--subtle_text);
 
 .current {
     color: var(--pressed_state);
-    }
+}
 
 .current::after {
     position: absolute;
