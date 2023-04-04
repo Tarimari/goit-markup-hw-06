@@ -368,19 +368,40 @@
         <form class="modal-form">
   
             <label class="modal-label">Name
-              <input class="modal-field" type="text" autofocus >
+              <div class="modal-label-input">
+                <input class="modal-field" type="text" autofocus >
+                <span class="label-icon">
+                  <svg class="label-icon-svg">
+                    <use class="label-icon-use" href="./images/sprite-icon.svg#icon-person"></use>
+                  </svg>
+              </div>
+              </span>
             </label>
             <label class="modal-label">Phone
-              <input class="modal-field" type="tel">
+              <div class="modal-label-input">
+                <input class="modal-field" type="tel">
+                <span class="label-icon">
+                  <svg class="label-icon-svg kostul">
+                    <use class="label-icon-use" width="13px" height="13px" href="./images/sprite-icon.svg#icon-phone"></use>
+                  </svg>
+                </span>
+              </div>
             </label>
             <label class="modal-label">Email
-              <input class="modal-field" type="email">
+              <div class="modal-label-input">
+                <input class="modal-field" type="email">
+                <span class="label-icon">
+                  <svg class="label-icon-svg kostul">
+                    <use class="label-icon-use" width="15px" height="12px" href="./images/sprite-icon.svg#icon-mail"></use>
+                  </svg>
+              </div>
+              </span>
             </label class="modal-label">
             <label class="modal-label">Comment
               <textarea class="modal-textarea" name="" id="" rows="6" placeholder="Text input" ></textarea>
             </label>
           <div class="modal-police">
-            <input class="modal-chackbox" type="checkbox" name="" id="police">
+            <input class="modal-chackbox" type="checkbox" name="" id="police" required>
             <label for="police" class="modal-label">I accept the terms and conditions of the
               <a class="link" href="">Privacy Policy</a>
             </label>
