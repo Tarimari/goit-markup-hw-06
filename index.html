@@ -356,6 +356,10 @@
                     </li>
                   </ul>
         </div>
+        <form action="" class="footer-connect">
+          <h2 class="social-text">Subscribe</h2>
+          <input type="email" name="email" id="" class="connect-email" placeholder="E-mail">
+          <button type="submit" class="connect-btn">Subscribe</button></form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -369,7 +373,7 @@
   
             <label class="modal-label">Name
               <div class="modal-label-input">
-                <input class="modal-field" type="text" autofocus >
+                <input class="modal-field" type="text" name="name" autofocus >
                 <span class="label-icon">
                   <svg class="label-icon-svg">
                     <use class="label-icon-use" href="./images/sprite-icon.svg#icon-person"></use>
@@ -379,7 +383,7 @@
             </label>
             <label class="modal-label">Phone
               <div class="modal-label-input">
-                <input class="modal-field" type="tel">
+                <input class="modal-field" type="tel" name="tel">
                 <span class="label-icon">
                   <svg class="label-icon-svg kostul">
                     <use class="label-icon-use" width="13px" height="13px" href="./images/sprite-icon.svg#icon-phone"></use>
@@ -389,7 +393,7 @@
             </label>
             <label class="modal-label">Email
               <div class="modal-label-input">
-                <input class="modal-field" type="email">
+                <input class="modal-field" type="email" name="email">
                 <span class="label-icon">
                   <svg class="label-icon-svg kostul">
                     <use class="label-icon-use" width="15px" height="12px" href="./images/sprite-icon.svg#icon-mail"></use>
@@ -398,16 +402,14 @@
               </span>
             </label class="modal-label">
             <label class="modal-label">Comment
-              <textarea class="modal-textarea" name="" id="" rows="6" placeholder="Text input" ></textarea>
+              <textarea class="modal-textarea" name="coment" id="" rows="6" placeholder="Text input" ></textarea>
             </label>
           <div class="modal-police">
-            
-            
             <label class="modal-label policy-label">
-              <input class="real-chackbox" type="checkbox" name="" required>
+              <input class="real-chackbox visually_hidden" type="checkbox" name="police" value="police" required>
               <span class="modal-chackbox"></span>
               I accept the terms and conditions of the
-              <a class="link" href=""> Privacy Policy</a>
+              <a class="" href=""> Privacy Policy</a>
             </label>
           </div>
           <button class="face-btn form-btn" type="submit">Send</button>

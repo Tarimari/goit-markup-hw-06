@@ -186,18 +186,23 @@ img {
     border: 1px solid #2E2F42;
     border-radius: 4px;
 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field:focus {
+    border: none;
     outline: 1px solid var(--primary_brand);
     opacity: 1;
 }
 
-.modal-field:focus + .label-icon{
+.modal-field:focus+.label-icon {
     fill: var(--primary_brand);
 }
 
 .label-icon {
+    fill: var(--dark);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-icon-svg {
@@ -218,9 +223,7 @@ img {
     padding-top: 5px;
 }
 
-.label-icon-use {
-
-}
+.label-icon-use {}
 
 .modal-textarea {
     display: block;
@@ -236,6 +239,7 @@ img {
 }
 
 .modal-textarea:focus {
+    border: none;
     outline: 1px solid var(--primary_brand);
     opacity: 1;
 }
@@ -248,30 +252,41 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-police {
-
-}
+.modal-police {}
 
 .policy-label {
     display: flex;
     align-items: center;
     margin-top: 16px;
 }
-.policy-label .link {
+
+.policy-label a {
     margin-left: 5px;
 }
 
 .modal-chackbox {
-display: inline-block;
-width: 16px;
-height: 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 
-border: 1px solid var(--dark);
-border-radius: 2px;
+
+    border: 1px solid var(--dark);
+    border-radius: 2px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.real-chackbox:checked + .modal-chackbox{
+.real-chackbox:checked+.modal-chackbox {
     background-color: var(--pressed_state);
+    background-image: url(../images/checed.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 3px solid var(--pressed_state);
+
+
 }
 
 .form-btn {
@@ -399,6 +414,7 @@ border-radius: 2px;
 
 .footer-conteiner {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer_logo-text {}
@@ -460,6 +476,64 @@ border-radius: 2px;
     width: 24px;
     height: 24px;
     fill: var(--white_background);
+}
+
+.footer-connect {
+    margin-left: 80px;
+
+}
+
+.connect-email {
+    height: 40px;
+    width: auto;
+    margin-top: 16px;
+    margin-right: 24px;
+    padding-left: 16px;
+
+
+    background-color: var(--dark);
+    border: 1px solid var(--white_background);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.connect-email::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: var(--white_background);
+}
+
+.connect-btn {
+    position: relative;
+    padding: 8px 60px 8px 24px;
+    background-color: var(--primary_brand);
+    border: 1px solid var(--primary_brand);
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white_background);
+
+}
+
+.connect-btn::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-image: url(../images/telegram.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 /*----------MAIN---------*/
