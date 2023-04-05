@@ -128,7 +128,7 @@
               />
             </li>
           </ul>
-        </div class="container">
+        </div>
       </section>
       <section class="team">
         <div class="team-conteiner container">
@@ -356,19 +356,21 @@
                     </li>
                   </ul>
         </div>
-        <form action="" class="footer-connect">
-          <h2 class="social-text">Subscribe</h2>
-          <input type="email" name="email" id="" class="connect-email" placeholder="E-mail">
+        <form class="footer-connect">
+          <div>
+            <p class="social-text">Subscribe</p>
+            <input type="email" name="email" class="connect-email" placeholder="E-mail">
+          </div>
           <button type="submit" class="connect-btn">Subscribe</button></form>
-      </div>
+          </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="backdrop-close-btn" data-modal-close>
+        <button type="button" class="backdrop-close-btn" data-modal-close>
           <svg class="close-btn">
             <use class="close-btn-x" width="8px" height="8px" href="./images/xo.svg#icon-x"></use></svg>
           </button>
-          <h2 class="modal-main">Leave your contacts and we will call you back</h2>
+          <p class="modal-main">Leave your contacts and we will call you back<p>
         <form class="modal-form">
   
             <label class="modal-label">Name
@@ -378,8 +380,8 @@
                   <svg class="label-icon-svg">
                     <use class="label-icon-use" href="./images/sprite-icon.svg#icon-person"></use>
                   </svg>
-              </div>
               </span>
+              </div>
             </label>
             <label class="modal-label">Phone
               <div class="modal-label-input">
@@ -398,14 +400,14 @@
                   <svg class="label-icon-svg kostul">
                     <use class="label-icon-use" width="15px" height="12px" href="./images/sprite-icon.svg#icon-mail"></use>
                   </svg>
+                </span>
               </div>
-              </span>
-            </label class="modal-label">
+            </label>
             <label class="modal-label">Comment
-              <textarea class="modal-textarea" name="coment" id="" rows="6" placeholder="Text input" ></textarea>
+              <textarea class="modal-textarea" name="coment" placeholder="Text input" ></textarea>
             </label>
           <div class="modal-police">
-            <label class="modal-label policy-label">
+            <label class="policy-label">
               <input class="real-chackbox visually_hidden" type="checkbox" name="police" value="police" required>
               <span class="modal-chackbox"></span>
               I accept the terms and conditions of the
